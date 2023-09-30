@@ -20,7 +20,25 @@ Name:
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <style>
-      
+      /* Add a solid border around images */
+      .image-border {
+        border: 2px solid #fff; /* Adjust the border width and color as needed */
+        transition: transform 0.3s ease, filter 0.3s ease, border 0.3s ease;
+      }
+
+      .image-border:hover {
+        border: 2px solid #00f; /* Change border color on hover */
+      }
+
+      .image-border img {
+        transition: transform 0.3s ease, filter 0.3s ease;
+      }
+
+      .image-border:hover img {
+        transform: scale(1.05); /* Scale the image slightly on hover */
+        filter: brightness(1.2); /* Increase brightness on hover */
+      }
+
       /* Custom CSS to change navbar button color to white */
       .w3-bar a.w3-button {
         color: white;
@@ -84,7 +102,6 @@ Name:
       .w3-bar-item.grey-button {
         color: grey !important;
       }
-
       /* Turn off parallax scrolling for tablets and phones */
       @media only screen and (max-device-width: 1600px) {
         .bgimg-1,
@@ -275,7 +292,7 @@ Name:
       <div class="w3-row-padding w3-center">
         <div class="w3-col m3">
           <img
-            src="./imgs/proj1.png"
+            src="./imgs/f1.png"
             style="width: 100%"
             onclick="onClick(this)"
             class="w3-hover-opacity"
@@ -285,7 +302,7 @@ Name:
 
         <div class="w3-col m3">
           <img
-            src="./imgs/proj2.png"
+            src="./imgs/f2.png"
             style="width: 100%"
             onclick="onClick(this)"
             class="w3-hover-opacity"
@@ -295,7 +312,7 @@ Name:
 
         <div class="w3-col m3">
           <img
-            src="./imgs/proj3.png"
+            src="./imgs/f3.png"
             style="width: 100%"
             onclick="onClick(this)"
             class="w3-hover-opacity"
@@ -305,7 +322,7 @@ Name:
 
         <div class="w3-col m3">
           <img
-            src="./imgs/proj4.png"
+            src="./imgs/f4.png"
             style="width: 100%"
             onclick="onClick(this)"
             class="w3-hover-opacity"
@@ -317,7 +334,7 @@ Name:
       <div class="w3-row-padding w3-center w3-section">
         <div class="w3-col m3">
           <img
-            src="./imgs/proj5.png"
+            src="./imgs/f5.png"
             style="width: 100%"
             onclick="onClick(this)"
             class="w3-hover-opacity"
